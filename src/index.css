@@ -1,0 +1,131 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	@font-face {
+		font-family: "Neue-Montreal";
+		font-style: italic;
+		src: url("/src/assets/fonts/PPNeueMontreal-Italic.otf");
+	}
+	@font-face {
+		font-family: "Neue-Montreal";
+		font-weight: 100;
+		src: url("/src/assets/fonts/PPNeueMontreal-Thin.otf");
+	}
+	@font-face {
+		font-family: "Neue-Montreal";
+		font-weight: 400;
+		src: url("/src/assets/fonts/PPNeueMontreal-Book.otf");
+	}
+	@font-face {
+		font-family: "Neue-Montreal";
+		font-weight: 500;
+		src: url("/src/assets/fonts/PPNeueMontreal-Medium.otf");
+	}
+	@font-face {
+		font-family: "Neue-Montreal";
+		font-weight: 600;
+		font-style: italic;
+		src: url("/src/assets/fonts/PPNeueMontreal-SemiBolditalic.otf");
+	}
+	@font-face {
+		font-family: "Neue-Montreal";
+		font-weight: 700;
+		src: url("/src/assets/fonts/PPNeueMontreal-Bold.otf");
+	}
+
+	*,
+	*::before,
+	*::after {
+		@apply box-border;
+	}
+
+	html,
+	body {
+		@apply pt-[1px] box-border font-neue min-h-[100vh] min-w-[100vw] overflow-x-hidden bg-gray-50 antialiased;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		@apply tracking-wide;
+	}
+
+	h2 {
+		@apply text-xl md:text-3xl;
+	}
+
+	h3 {
+		@apply text-lg md:text-2xl;
+	}
+
+	h4 {
+		@apply text-base md:text-lg;
+	}
+
+	body,
+	.p {
+		@apply text-sm md:text-base;
+	}
+
+	[type="text"],
+	[type="email"],
+	[type="password"],
+	[type="number"],
+	textarea,
+	select {
+		@apply border-none outline-none cursor-pointer;
+	}
+
+	img {
+		@apply block object-center;
+	}
+	button,
+	a {
+		@apply inline-block border-none outline-none focus:ring-0 focus-visible:ring-0 cursor-pointer;
+	}
+
+	*:disabled {
+		@apply opacity-50 hover:!opacity-50;
+	}
+}
+
+@layer components {
+	.font-sm {
+		@apply text-[12px] md:text-[13px] lg:text-[15px];
+	}
+
+	.font-md {
+		@apply text-[13px] md:text-[15px] lg:text-[1rem];
+	}
+
+	.font-lg {
+		@apply text-[1rem] md:text-[18px] lg:text-[20px];
+	}
+
+	.flex-c {
+		@apply flex items-center;
+	}
+
+	.abs-c {
+		@apply left-1/2 -translate-x-1/2;
+	}
+
+	.p-abs-c {
+		@apply before:left-1/2 before:-translate-x-1/2;
+	}
+
+	.line-wrap {
+		@apply overflow-hidden;
+	}
+}
+
+@layer utilities {
+	.container {
+		@apply mx-auto w-[90%] max-w-[72rem];
+	}
+}
