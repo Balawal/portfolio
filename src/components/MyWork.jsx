@@ -6,13 +6,11 @@ import Halal2 from "../assets/icons/halal2.png";
 import Halal3 from "../assets/icons/halal3.png";
 import Halal4 from "../assets/icons/halal4.png";
 
-import History1 from "../assets/icons/historypage.png";
-import History2 from "../assets/icons/history2.png";
-import History3 from "../assets/icons/history3.png";
-import History4 from "../assets/icons/history4.png";
-import History5 from "../assets/icons/history5.png";
-import History6 from "../assets/icons/history6.png";
-import History7 from "../assets/icons/history7.png";
+import History1 from "../assets/icons/today_in_1.png";
+import History2 from "../assets/icons/today_in_2.png";
+import History3 from "../assets/icons/today_in_3.png";
+import History4 from "../assets/icons/today_in_4.png";
+import History5 from "../assets/icons/today_in_5.png";
 
 import Underline from "../assets/icons/underline.svg";
 import TitleUnderline from "../assets/icons/TitleUnderline";
@@ -40,7 +38,7 @@ const MyWorks = [
 			title: "Today In History",
 			description: "Provides users daily notable historical events, births, deaths and offering multi-language support",
 			links: [{ to: "https://github.com/Balawal/today-in-history", Icon: Github }],
-			images: [History1, History2, History3, History4, History5, History6, History7],
+			images: [History1, History2, History3, History4, History5],
 			largest: History1,
 			imgGrandpa: "bg-meditapp",
 		},
