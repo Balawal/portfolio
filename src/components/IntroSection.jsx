@@ -324,14 +324,17 @@ const Intro = () => {
 				</motion.div>
 
 				<motion.h1
-					className="font-bold tracking-[.03em] text-[2.2em] md:text-[2.75em] lg:text-[3.25em] leading-[1.1] md:leading-[1.075]"
+					className="font-bold tracking-[.03em] text-[1.9em] md:text-[2.3em] lg:text-[2.8em] leading-[1.1] md:leading-[1.075]"
 					variants={header}
 					onAnimationComplete={() => {
 						setCanScroll(true);
 					}}>
 					<div className="line-wrap">
 						<motion.div variants={descriptionRise}>
-							Full-Stack Software Engineer 
+							Full-Stack Software Engineer
+						</motion.div>
+						<motion.div variants={descriptionRise}>
+							Focus: Mobile App Development
 						</motion.div>
 					</div>
 				</motion.h1>

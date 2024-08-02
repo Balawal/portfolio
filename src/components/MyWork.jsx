@@ -16,6 +16,7 @@ import Underline from "../assets/icons/underline.svg";
 import TitleUnderline from "../assets/icons/TitleUnderline";
 
 import Github from "../assets/icons/Github";
+import AppStore from "../assets/icons/AppStore";
 
 import ChevronLeftBtn from "../assets/icons/ChevronLeftBtn";
 import ChevronRightBtn from "../assets/icons/ChevronRightBtn";
@@ -37,7 +38,10 @@ const MyWorks = [
 		{
 			title: "Today In History",
 			description: "Discover daily notable historical events, births, and deaths with multi-language support and an intelligent AI chatbot to assist you",
-			links: [{ to: "https://github.com/Balawal/today-in-history", Icon: Github }],
+			links: [
+				{ to: "https://github.com/Balawal/today-in-history", Icon: Github },
+				{ to: "https://apps.apple.com/us/app/today-through-time/id6596767515", Icon: AppStore },
+			],
 			images: [History1, History2, History3, History4, History5],
 			largest: History1,
 			imgGrandpa: "bg-meditapp",
