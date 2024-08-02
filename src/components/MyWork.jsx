@@ -36,7 +36,7 @@ const MyWorks = [
 		},
 		{
 			title: "Today In History",
-			description: "Provides users daily notable historical events, births, deaths and offering multi-language support",
+			description: "Discover daily notable historical events, births, and deaths with multi-language support and an intelligent AI chatbot to assist you",
 			links: [{ to: "https://github.com/Balawal/today-in-history", Icon: Github }],
 			images: [History1, History2, History3, History4, History5],
 			largest: History1,
