@@ -10,6 +10,13 @@ const HISTORY = [
 		year: "2024",
 		events: [
 			{
+				title: "College graduate!",
+				details: "Cum Laude graduate from Hunter College with a B.A in Computer Science",
+				date: "Jan 2024",
+				icon: Graduation,
+				bg: "#daebfb",
+			},
+			{
 				title: "Looking for a new opportunity... 🙏",
 				details: "Eager to join a dynamic team to grow as a developer!",
 				date: "TBD",
@@ -36,13 +43,6 @@ const HISTORY = [
 				date: "July 2023",
 				icon: Suitcase,
 				bg: "#e3e3e3",
-			},
-			{
-				title: "First generation college graduate!",
-				details: "Cum Laude graduate from Hunter College with a B.A in Computer Science",
-				date: "Dec 2023",
-				icon: Graduation,
-				bg: "#daebfb",
 			},
 		],
 	},
@@ -84,7 +84,7 @@ const About = () => {
 									I'm a full-stack software engineer with experience working in diverse sectors like Fintech, Transportation, and NASA. 
 									I've contributed to projects at both large companies and early-stage startups.
 								</li>
-								<li>I enjoy designing and building out seamless and intuitive user experiences.</li>
+								<li>I enjoy designing and building out seamless and intuitive mobile applications.</li>
 								<li>In my free time I enjoy lifting weights, drawing, reading and going for long walks.</li>
 							</ul>
 						</div>

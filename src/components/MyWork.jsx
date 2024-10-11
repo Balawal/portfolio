@@ -12,6 +12,17 @@ import History3 from "../assets/icons/today_in_3.png";
 import History4 from "../assets/icons/today_in_4.png";
 import History5 from "../assets/icons/today_in_5.png";
 
+import Tradewise1 from "../assets/icons/Tradewise_1.png";
+import Tradewise2 from "../assets/icons/Tradewise_2.png";
+import Tradewise3 from "../assets/icons/Tradewise_3.png";
+import Tradewise4 from "../assets/icons/Tradewise_4.png";
+import Tradewise5 from "../assets/icons/Tradewise_5.png";
+import Tradewise6 from "../assets/icons/Tradewise_6.png";
+import Tradewise7 from "../assets/icons/Tradewise_7.png";
+import Tradewise8 from "../assets/icons/Tradewise_8.png";
+import Tradewise9 from "../assets/icons/Tradewise_9.png";
+import Tradewise10 from "../assets/icons/Tradewise_10.png";
+
 import Underline from "../assets/icons/underline.svg";
 import TitleUnderline from "../assets/icons/TitleUnderline";
 
@@ -26,7 +37,7 @@ const MyWorks = [
 		{
 			title: "Simply Halal",
 			description:
-				"Full-stack mobile application that filters and locates nearby halal restaurants",
+				"Tired of scrolling through endless restaurant lists? This full-stack app is your personal halal food concierge. With smart filters and accurate location data, we'll help you find halal gems in your neighborhood.",
 			links: [
 				{ to: "https://github.com/Balawal/simplyhalal/tree/master", Icon: Github },
 			],
@@ -37,7 +48,7 @@ const MyWorks = [
 		},
 		{
 			title: "Today In History",
-			description: "Discover daily notable historical events, births, and deaths with multi-language support and an intelligent AI chatbot to assist you",
+			description: "Explore history, your way. Daily updates, multi-language support, and an intelligent AI chatbot make learning about the past engaging and informative.",
 			links: [
 				{ to: "https://github.com/Balawal/today-in-history", Icon: Github },
 				{ to: "https://apps.apple.com/us/app/today-through-time/id6596767515", Icon: AppStore },
@@ -45,6 +56,18 @@ const MyWorks = [
 			images: [History1, History2, History3, History4, History5],
 			largest: History1,
 			imgGrandpa: "bg-meditapp",
+		},
+		{
+			title: "Tradewise",
+			description:
+				"Elevate your investing game with our full-stack mobile app. Stay informed with real-time market data, personalized alerts, and expert insights. From interactive tools to live tweets and earning calendar reminders, our app empowers you to make informed decisions and seize market opportunities.",
+			links: [
+				{ to: "https://github.com/Balawal/tradewise", Icon: Github },
+			],
+			images: [Tradewise1, Tradewise2, Tradewise3, Tradewise4, Tradewise5, Tradewise6, Tradewise7, Tradewise8, Tradewise9, Tradewise10 ],
+			largest: Tradewise1,
+			imgGrandpa: "grow",
+			imgParent: "bg-white",
 		},
 	],
 ];
@@ -136,18 +159,19 @@ const MyWork = () => {
 					</motion.div>
 				</h3>
 				<div className="grid gap-[3em] md:gap-[min(3.5vw,_4em)]">
-					{MyWorks.map((myWorkRow, i) => (
-						<div
-							key={i}
-							id={"row-" + i}
-							className="grow grid grid-cols-[repeat(auto-fit,minmax(350px,1fr))] gap-[3em] md:gap-[min(2.8vw,4em)]">
-							{myWorkRow.map((myWork, i) => (
-								<MyWorkCard key={i} myWork={myWork} />
-							))}
-						</div>
-					))}
-					{/* </div> */}
-				</div>
+          <div className="grid grid-cols-2 gap-[3em] md:gap-[min(2.8vw,4em)]">
+            {/* First two projects */}
+            {MyWorks[0].slice(0, 2).map((myWork, i) => (
+              <MyWorkCard key={i} myWork={myWork} />
+            ))}
+          </div>
+          {/* Center the third project */}
+          <div className="grid grid-cols-1 justify-items-center">
+            <div className="w-full max-w-xl">
+              <MyWorkCard myWork={MyWorks[0][2]} />
+            </div>
+          </div>
+        </div>
 			</div>
 		</section>
 	);
