@@ -99,27 +99,24 @@ const About = () => {
 const AboutMeList = (props) => {
 	const isMd = useMediaQuery({ query: "(min-width: 803px)" });
 	const { scroll } = useLocomotiveScroll();
-
+	
 	useEffect(() => {
-		scroll?.update();
+	  scroll?.update();
 	}, [isMd]);
-	return isMd ? (
-		<div
-			data-scroll
-			data-scroll-sticky
-			data-scroll-target="#sticky"
-			className="sticky mb-[3em] md:basis-[25%] md:max-w-[17rem]">
-			<img
-				className="mt-[clamp(4rem,_11vw,_4em)] lg:mt-[clamp(4rem,_10vw,_5.5rem)] max-w-[90%] mx-auto"
-				src={HeadShot}
-				alt=""
-			/>
-			{props.children}
-		</div>
-	) : (
-		<div className="sticky mb-[3em]">{props.children}</div>
+  
+	return (
+	  <div className={`sticky mb-[3em] ${isMd ? "md:basis-[25%] md:max-w-[17rem]" : ""}`}>
+		<img
+		  className={`mt-[clamp(4rem,_11vw,_4em)] lg:mt-[clamp(4rem,_10vw,_5.5rem)] ${
+			isMd ? "max-w-[90%]" : "max-w-[70%]" // Set a smaller width for mobile screens
+		  } mx-auto`}
+		  src={HeadShot}
+		  alt="Headshot"
+		/>
+		{props.children}
+	  </div>
 	);
-};
+  };
 
 const Timeline = () => {
 	return (

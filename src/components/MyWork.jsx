@@ -159,19 +159,19 @@ const MyWork = () => {
 					</motion.div>
 				</h3>
 				<div className="grid gap-[3em] md:gap-[min(3.5vw,_4em)]">
-          <div className="grid grid-cols-2 gap-[3em] md:gap-[min(2.8vw,4em)]">
-            {/* First two projects */}
-            {MyWorks[0].slice(0, 2).map((myWork, i) => (
-              <MyWorkCard key={i} myWork={myWork} />
-            ))}
-          </div>
-          {/* Center the third project */}
-          <div className="grid grid-cols-1 justify-items-center">
-            <div className="w-full max-w-xl">
-              <MyWorkCard myWork={MyWorks[0][2]} />
-            </div>
-          </div>
-        </div>
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-[3em] md:gap-[min(2.8vw,4em)]">
+    {/* First two projects */}
+    {MyWorks[0].slice(0, 2).map((myWork, i) => (
+      <MyWorkCard key={i} myWork={myWork} />
+    ))}
+  </div>
+  {/* Center the third project */}
+  <div className="grid grid-cols-1 justify-items-center">
+    <div className="w-full max-w-xl">
+      <MyWorkCard myWork={MyWorks[0][2]} />
+    </div>
+  </div>
+</div>
 			</div>
 		</section>
 	);
