@@ -22,6 +22,7 @@ import Tradewise7 from "../assets/icons/Tradewise_7.png";
 import Tradewise8 from "../assets/icons/Tradewise_8.png";
 import Tradewise9 from "../assets/icons/Tradewise_9.png";
 import Tradewise10 from "../assets/icons/Tradewise_10.png";
+import Tradewise11 from "../assets/icons/Tradewise_11.png";
 
 import Underline from "../assets/icons/underline.svg";
 import TitleUnderline from "../assets/icons/TitleUnderline";
@@ -64,7 +65,7 @@ const MyWorks = [
 			links: [
 				{ to: "https://github.com/Balawal/tradewise", Icon: Github },
 			],
-			images: [Tradewise1, Tradewise2, Tradewise3, Tradewise4, Tradewise5, Tradewise6, Tradewise7, Tradewise8, Tradewise9, Tradewise10 ],
+			images: [Tradewise1, Tradewise2, Tradewise3, Tradewise4, Tradewise5, Tradewise6, Tradewise7, Tradewise8, Tradewise9, Tradewise10, Tradewise11 ],
 			largest: Tradewise1,
 			imgGrandpa: "grow",
 			imgParent: "bg-white",
