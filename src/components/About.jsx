@@ -12,7 +12,7 @@ const HISTORY = [
 			{
 				title: "College graduate!",
 				details: "Cum Laude graduate from Hunter College with a B.A in Computer Science",
-				date: "Jun 2024",
+				date: "July 2023",
 				icon: Graduation,
 				bg: "#daebfb",
 			},
@@ -108,7 +108,7 @@ const AboutMeList = (props) => {
 	  <div className={`sticky mb-[3em] ${isMd ? "md:basis-[25%] md:max-w-[17rem]" : ""}`}>
 		<img
 		  className={`mt-[clamp(4rem,_11vw,_4em)] lg:mt-[clamp(4rem,_10vw,_5.5rem)] ${
-			isMd ? "max-w-[90%]" : "max-w-[70%]" // Set a smaller width for mobile screens
+			isMd ? "max-w-[90%]" : "max-w-[70%]" 
 		  } mx-auto`}
 		  src={HeadShot}
 		  alt="Headshot"

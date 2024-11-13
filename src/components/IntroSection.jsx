@@ -90,11 +90,9 @@ const floatingLink = {
 const nameRise = {
 	initial: {
 		opacity: 0,
-		// y: "50%",
 	},
 	animate: {
 		opacity: [0, 0.5, 1],
-		// y: 0,
 		transition: {
 			duration: 0.6,
 			type: "tween",
@@ -166,7 +164,6 @@ const appearIntoView = {
 	animate: {
 		opacity: 1,
 		transition: {
-			// when: "beforeChildren",
 			delay: 1,
 			duration: 0.4,
 		},
@@ -185,8 +182,6 @@ const Intro = () => {
 	const isSm = useMediaQuery({ query: "(max-width: 802px)" });
 
 	useEffect(() => {
-		// if (canScroll) document.querySelector("body").style.overflowY = "auto";
-		// else document.querySelector("body").style.overflowY = "hidden";
 		if (canScroll) scroll?.start();
 		else scroll?.stop();
 	}, [canScroll]);
@@ -302,8 +297,6 @@ const Intro = () => {
 				initial="initial"
 				animate="animate">
 				<motion.div
-					// initial="initial"
-					// animate="animate"
 					variants={nameRise}
 					className="flex items-center mb-[.75em] font-normal text-[1.375em] lg:text-[1.75em]">
 					<span className="">Hi, I&lsquo;m Balawal!</span>
