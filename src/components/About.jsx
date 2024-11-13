@@ -12,7 +12,7 @@ const HISTORY = [
 			{
 				title: "College graduate!",
 				details: "Cum Laude graduate from Hunter College with a B.A in Computer Science",
-				date: "Jan 2024",
+				date: "Jun 2024",
 				icon: Graduation,
 				bg: "#daebfb",
 			},

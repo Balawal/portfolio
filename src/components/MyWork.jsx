@@ -23,6 +23,7 @@ import Tradewise8 from "../assets/icons/Tradewise_8.png";
 import Tradewise9 from "../assets/icons/Tradewise_9.png";
 import Tradewise10 from "../assets/icons/Tradewise_10.png";
 import Tradewise11 from "../assets/icons/Tradewise_11.png";
+import Tradewise12 from "../assets/icons/Tradewise_12.png";
 
 import Underline from "../assets/icons/underline.svg";
 import TitleUnderline from "../assets/icons/TitleUnderline";
@@ -64,8 +65,9 @@ const MyWorks = [
 				"Elevate your investing game with our full-stack mobile app. Stay informed with real-time market data, personalized alerts, and expert insights. From interactive tools to live tweets and earning calendar reminders, our app empowers you to make informed decisions and seize market opportunities.",
 			links: [
 				{ to: "https://github.com/Balawal/tradewise", Icon: Github },
+				{ to: "https://apps.apple.com/us/app/tradeiq/id6737919391", Icon: AppStore },
 			],
-			images: [Tradewise1, Tradewise2, Tradewise3, Tradewise4, Tradewise5, Tradewise6, Tradewise7, Tradewise8, Tradewise9, Tradewise10, Tradewise11 ],
+			images: [Tradewise1, Tradewise2, Tradewise3, Tradewise4, Tradewise5, Tradewise6, Tradewise7, Tradewise8, Tradewise9, Tradewise10, Tradewise11, Tradewise12 ],
 			largest: Tradewise1,
 			imgGrandpa: "grow",
 			imgParent: "bg-white",

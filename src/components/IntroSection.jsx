@@ -3,13 +3,10 @@ import { motion } from "framer-motion";
 import { useMediaQuery } from "react-responsive";
 
 import GmailIcon from "../assets/icons/gmail.png";
-import CvIcon from "../assets/icons/cv.png";
 import GithubIcon from "../assets/icons/github.png";
 import LinkedInIcon from "../assets/icons/linkedin.png";
-import ReactIcon from "../assets/icons/react-svgrepo-com.svg";
 
 import NavBar from "./NavBar";
-import ArrowDown from "../assets/icons/ArrowDown";
 import ScrollDown from "../assets/icons/ScrollDown";
 import { useLocomotiveScroll } from "react-locomotive-scroll";
 
