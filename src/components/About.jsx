@@ -9,13 +9,7 @@ const HISTORY = [
 	{
 		year: "2024",
 		events: [
-			{
-				title: "College graduate!",
-				details: "Cum Laude graduate from Hunter College with a B.A in Computer Science",
-				date: "July 2023",
-				icon: Graduation,
-				bg: "#daebfb",
-			},
+			
 			{
 				title: "Looking for a new opportunity... 🙏",
 				details: "Eager to join a dynamic team to grow as a developer!",
