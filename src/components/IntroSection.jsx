@@ -321,11 +321,9 @@ const Intro = () => {
 					}}>
 					<div className="line-wrap">
 						<motion.div variants={descriptionRise}>
-							Full-Stack Software Engineer
+							Senior Full-Stack Software Engineer
 						</motion.div>
-						<motion.div variants={descriptionRise}>
-							Focus: Mobile App Development
-						</motion.div>
+						
 					</div>
 				</motion.h1>
 

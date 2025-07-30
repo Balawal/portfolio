@@ -7,13 +7,13 @@ import { useLocomotiveScroll } from "react-locomotive-scroll";
 
 const HISTORY = [
 	{
-		year: "2024",
+		year: "2025",
 		events: [
 			
 			{
-				title: "Looking for a new opportunity... 🙏",
-				details: "Eager to join a dynamic team to grow as a developer!",
-				date: "TBD",
+				title: "Senior Software Engineer",
+				details: "Lead full stack software engineer at GRID Gamers",
+				date: "Nov 2024 - Present",
 				icon: Suitcase,
 				bg: "#e3e3e3",
 			},
@@ -74,12 +74,9 @@ const About = () => {
 								About me 
 							</h3>
 							<ul className="flex flex-col gap-[.7em] list-disc list-inside text-gray-200 ">
-								<li>
-									I'm a full-stack software engineer with experience working in diverse sectors like Fintech, Transportation, and NASA. 
-									I've contributed to projects at both large companies and early-stage startups.
-								</li>
-								<li>I enjoy designing and building out seamless and intuitive mobile applications.</li>
-								<li>In my free time I enjoy lifting weights, drawing, reading and going for long walks.</li>
+								<li>I enjoy designing and building out seamless and intuitive mobile applications</li>
+								<li>In my free time I enjoy lifting weights, drawing and going for long walks</li>
+								<li>I love math</li>
 							</ul>
 						</div>
 					</AboutMeList>
