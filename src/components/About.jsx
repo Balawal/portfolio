@@ -12,7 +12,7 @@ const HISTORY = [
 			
 			{
 				title: "Senior Software Engineer",
-				details: "Lead full stack software engineer at GRID Gamers",
+				details: "Lead full stack software engineer at GRID",
 				date: "Nov 2024 - Present",
 				icon: Suitcase,
 				bg: "#e3e3e3",
