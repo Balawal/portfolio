@@ -5,127 +5,88 @@
 @layer base {
 	@font-face {
 		font-family: "Neue-Montreal";
-		font-style: italic;
-		src: url("/src/assets/fonts/PPNeueMontreal-Italic.otf");
-	}
-	@font-face {
-		font-family: "Neue-Montreal";
-		font-weight: 100;
-		src: url("/src/assets/fonts/PPNeueMontreal-Thin.otf");
-	}
-	@font-face {
-		font-family: "Neue-Montreal";
 		font-weight: 400;
-		src: url("/src/assets/fonts/PPNeueMontreal-Book.otf");
+		font-display: swap;
+		src: url("./assets/fonts/PPNeueMontreal-Book.otf");
 	}
 	@font-face {
 		font-family: "Neue-Montreal";
 		font-weight: 500;
-		src: url("/src/assets/fonts/PPNeueMontreal-Medium.otf");
-	}
-	@font-face {
-		font-family: "Neue-Montreal";
-		font-weight: 600;
-		font-style: italic;
-		src: url("/src/assets/fonts/PPNeueMontreal-SemiBolditalic.otf");
+		font-display: swap;
+		src: url("./assets/fonts/PPNeueMontreal-Medium.otf");
 	}
 	@font-face {
 		font-family: "Neue-Montreal";
 		font-weight: 700;
-		src: url("/src/assets/fonts/PPNeueMontreal-Bold.otf");
+		font-display: swap;
+		src: url("./assets/fonts/PPNeueMontreal-Bold.otf");
 	}
 
-	*,
-	*::before,
-	*::after {
-		@apply box-border;
+	:root {
+		color-scheme: dark;
 	}
 
-	html,
+	html {
+		scroll-behavior: smooth;
+		background: #151f20;
+		scrollbar-color: #2f4446 #151f20;
+		scrollbar-width: thin;
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		html {
+			scroll-behavior: auto;
+		}
+	}
+
 	body {
-		@apply pt-[1px] box-border font-neue min-h-[100vh] min-w-[100vw] overflow-x-hidden bg-gray-50 antialiased;
+		@apply bg-night font-neue text-[15px] leading-relaxed text-ink antialiased md:text-base;
+		overflow-x: hidden;
 	}
 
-	h1,
-	h2,
-	h3,
-	h4,
-	h5,
-	h6 {
-		@apply tracking-wide;
+	section[id],
+	footer[id] {
+		scroll-margin-top: 4rem;
 	}
 
-	h2 {
-		@apply text-xl md:text-3xl;
+	::selection {
+		background: #b8b0ff;
+		color: #151f20;
 	}
 
-	h3 {
-		@apply text-lg md:text-2xl;
-	}
-
-	h4 {
-		@apply text-base md:text-lg;
-	}
-
-	body,
-	.p {
-		@apply text-sm md:text-base;
-	}
-
-	[type="text"],
-	[type="email"],
-	[type="password"],
-	[type="number"],
-	textarea,
-	select {
-		@apply border-none outline-none cursor-pointer;
+	:focus-visible {
+		outline: 2px solid #b8b0ff;
+		outline-offset: 3px;
 	}
 
 	img {
-		@apply block object-center;
-	}
-	button,
-	a {
-		@apply inline-block border-none outline-none focus:ring-0 focus-visible:ring-0 cursor-pointer;
+		display: block;
+		max-width: 100%;
 	}
 
-	*:disabled {
-		@apply opacity-50 hover:!opacity-50;
+	a,
+	button {
+		cursor: pointer;
 	}
 }
 
 @layer components {
-	.font-sm {
-		@apply text-[12px] md:text-[13px] lg:text-[15px];
-	}
-
-	.font-md {
-		@apply text-[13px] md:text-[15px] lg:text-[1rem];
-	}
-
-	.font-lg {
-		@apply text-[1rem] md:text-[18px] lg:text-[20px];
-	}
-
-	.flex-c {
-		@apply flex items-center;
-	}
-
-	.abs-c {
-		@apply left-1/2 -translate-x-1/2;
-	}
-
-	.p-abs-c {
-		@apply before:left-1/2 before:-translate-x-1/2;
-	}
-
-	.line-wrap {
-		@apply overflow-hidden;
-	}
-}
-
-@layer utilities {
-	.container {
+	.wrap {
 		@apply mx-auto w-[90%] max-w-[72rem];
+	}
+
+	/* Graph-paper grid used behind the hero. --mx / --my are set from pointer position. */
+	.graph {
+		background-image: linear-gradient(rgba(158, 183, 183, 0.09) 1px, transparent 1px),
+			linear-gradient(90deg, rgba(158, 183, 183, 0.09) 1px, transparent 1px);
+		background-size: 56px 56px;
+	}
+
+	.graph-lit {
+		background-image: linear-gradient(rgba(184, 176, 255, 0.4) 1px, transparent 1px),
+			linear-gradient(90deg, rgba(184, 176, 255, 0.4) 1px, transparent 1px);
+		background-size: 56px 56px;
+		-webkit-mask-image: radial-gradient(260px circle at var(--mx, 72%) var(--my, 32%), #000, transparent 70%);
+		mask-image: radial-gradient(260px circle at var(--mx, 72%) var(--my, 32%), #000, transparent 70%);
 	}
 }
